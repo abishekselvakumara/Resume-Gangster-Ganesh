@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.resume {
+    background-color: white;
+    width: 100%;
+    max-width: 900px; 
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+h1, h2, h3 {
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: 0;
+    border-top: 2px solid #ccc;
+    margin: 20px 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+ 
+}
+
+
+.left {
+    
+    flex: 1;
+    max-width: 250px;
+    background-color: #6aa994;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.img img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact p, .communication ul, .social a {
+    margin: 10px 0;
+}
+
+.social a {
+    display: block;
+    margin: 5px 0;
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+}
+
+.social a:hover {
+    color: #007bff;
+}
+.experience p{
+    text-align: justify;
+}
+
+.right {
+    flex: 2;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #00000013;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.about{
+    text-align: justify;
+}
+
+.right p, .right ul {
+    margin: 10px 0;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 5px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+}
+
+.right h2, .right h3 {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .left {
+        margin-right: 0;
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+
+    .right {
+        max-width: 100%;
+    }
+}
